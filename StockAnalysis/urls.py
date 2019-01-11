@@ -23,6 +23,7 @@ from StockAnalysis import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^search/', views.search, name='search'),
+    url(r'^forecaster/', views.forecaster, name='forecaster'),
     url(r'^$', views.home, name='home'),
     #url(r'^result/', views.result, name='result'),
     #url(r'^contact/', views.contact, name='contact'),

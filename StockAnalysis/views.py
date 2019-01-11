@@ -126,6 +126,9 @@ def yahoo(stock):
 def home(request):
     return render(request, 'app_base.html')
 
+def forecaster(request):
+    return render(request, 'forecaster.html')
+
 def search(request):
     if request.method == 'POST':
         curStock = request.POST.get("stock")
